@@ -38,6 +38,8 @@ import static com.adeven.adjustio.Constants.XLARGE;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.util.Locale;

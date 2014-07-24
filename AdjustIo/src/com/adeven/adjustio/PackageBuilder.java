@@ -9,6 +9,7 @@
 
 package com.adeven.adjustio;
 
+import android.content.Context;
 import android.text.TextUtils;
 import android.util.Base64;
 import java.text.SimpleDateFormat;
@@ -21,6 +22,7 @@ import org.json.JSONObject;
 public class PackageBuilder {
 
     private static final String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss'Z'Z";
+    private Context context;
 
     // general
     private String appToken;
@@ -49,6 +51,10 @@ public class PackageBuilder {
     private Map<String, String> callbackParameters;
 
     private static SimpleDateFormat dateFormat;
+
+    public void PackageBuilder(Context context) {
+        this.context = context;
+    }
 
     public void setAppToken(String appToken) {
         this.appToken = appToken;
