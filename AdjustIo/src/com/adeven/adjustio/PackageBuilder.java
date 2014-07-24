@@ -52,7 +52,7 @@ public class PackageBuilder {
 
     private static SimpleDateFormat dateFormat;
 
-    public void PackageBuilder(Context context) {
+    public PackageBuilder(Context context) {
         this.context = context;
     }
 
